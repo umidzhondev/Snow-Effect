@@ -2,11 +2,11 @@ const snowBox = document.querySelector(".snow__box");
 const snow = document.querySelectorAll(".snow__box i");
 let interval = setInterval(()=>{
     generateSnow()
-},80)
+},30)
 function generateSnow(){
     let size = Math.random() * 2.5 + 1.4;
     if(window.innerWidth <= 576){
-        size = Math.random() * 1.8 + 1.2
+        size = Math.random() * 1.8 + 1.4
     }
     let newSnow = document.createElement("i");
     newSnow.classList.add("fas","fa-snowflake")
