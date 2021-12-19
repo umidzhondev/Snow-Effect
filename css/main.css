@@ -13,7 +13,8 @@ body{
 }
 .snow__box{
     width: 100%;
-    height: auto;
+    height: 100vh;
+    overflow: hidden;
 }
 .snow__box > i{
     color: #fff;
@@ -22,25 +23,6 @@ body{
     font-size: 2rem;
     animation: snow 2s linear;
 }
-.cloud__box{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    z-index: 999;
-    color: rgb(255, 255, 255);
-    margin:  0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-
-}
-.cloud__box i{
-    font-size: 10rem;
-    margin: 0 50px;
-    color: #fff !important;
-}
 @keyframes snow {
     0%{
         transform: translateY(0); 
@@ -48,28 +30,4 @@ body{
     100%{
         transform: translateY(105vh) ;
     }
-}
-@media screen and (max-width:1830px ) {
-    .cloud__box i:nth-child(6){
-        display: none;
-    }
-}
-@media screen and (max-width:1580px ) {
-    .cloud__box i:nth-child(5){
-        display: none;
-    }
-}
-@media screen and (max-width:1200px ) {
-    .cloud__box i{font-size: 7rem; margin: 0;}
-}
-@media screen and (max-width:768px ) {
-    .cloud__box i{font-size: 5rem;}
-}
-@media screen and (max-width:450px ) {
-    .cloud__box i:nth-child(4){
-        display: none;
-    }
-}
-@media screen and (max-width:350px ) {
-    .cloud__box i{font-size: 4rem;}
 }
