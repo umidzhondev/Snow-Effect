@@ -10,16 +10,16 @@ function generateSnow(){
     const arr =[randomR,randomG,randomB].map(r => Math.ceil(r));
     let size = Math.random() * 2.5 + 1.4;
     if(window.innerWidth <= 576){
-        size = Math.random() * 1.5 + .7
+        size = Math.random() * 1.8 + 1.2
     }
     let newSnow = document.createElement("i");
     newSnow.classList.add("fas","fa-snowflake")
     newSnow.style.cssText = `
-    left: ${Math.random() * window.innerWidth + "px"};
+    left: ${Math.random() * window.innerWidth-20 + "px"};
     animation:snow ${Math.random()*1.4 + 1.3}s linear forwards;
     font-size: ${size}rem;
     opacity: ${(Math.random() * 1 + 0.3)};
-    color: rgb( ${arr[0]} , ${arr[1]} , ${arr[2]} );
+    // color: rgb( ${arr[0]} , ${arr[1]} , ${arr[2]} );
     `
     snowBox.appendChild(newSnow)
     setTimeout(() => {

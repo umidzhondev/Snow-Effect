@@ -25,6 +25,6 @@ body{
 }
 @keyframes snow {
     100%{
-        transform: translateY(105vh) ;
+        transform: translateY(150vh) ;
     }
 }
