@@ -3,7 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html{
+    overflow: hidden;
+}
 body{
     height: 100vh;
     overflow: hidden;
@@ -44,7 +46,7 @@ body{
         transform: translateY(0); 
     }
     100%{
-        transform: translateY(92vh) ;
+        transform: translateY(105vh) ;
     }
 }
 @media screen and (max-width:1830px ) {
