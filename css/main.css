@@ -24,9 +24,6 @@ body{
     animation: snow 2s linear;
 }
 @keyframes snow {
-    0%{
-        transform: translateY(0); 
-    }
     100%{
         transform: translateY(105vh) ;
     }

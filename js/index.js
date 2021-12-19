@@ -2,7 +2,7 @@ const snowBox = document.querySelector(".snow__box");
 const snow = document.querySelectorAll(".snow__box i");
 let interval = setInterval(()=>{
     generateSnow()
-},10)
+},100)
 function generateSnow(){
     let randomR =  Math.random()*255+10;
     let randomG = Math.random()*255+0;
